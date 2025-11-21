@@ -1,0 +1,87 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject",
+            "contentUrl": "CIP119:contentUrl",
+            "sha256": "CIP119:sha256"
+          }
+        },
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "givenName": "Jonas",
+    "image": {
+      "@type": "ImageObject",
+      "contentUrl": "https://pbs.twimg.com/profile_banners/1600894708565385216/1751868034/1500x500",
+      "sha256": "e29f3dafdd72797eb7e86f1f434b99e13ed57f5ff62ca07f77dd0dffbf148e6b"
+    },
+    "motivations": "I want to serve as a DRep because I believe that meaningful governance is essential to Cardano’s long-term success, and I’m committed to helping build a network where every participant feels represented, informed, and empowered. Cardano’s governance model is an opportunity to demonstrate how decentralized decision-making can be both inclusive and effective, and I want to contribute to that vision.",
+    "objectives": "As a Delegated Representative (DRep) within the Cardano governance ecosystem, my objective is to contribute to a decentralized, transparent, and accountable decision-making process. I believe that Cardano’s governance model empowers every ADA holder to shape the network’s evolution, and I aim to serve as a responsible, informed, and community-aligned voice within that process.",
+    "paymentAddress": "addr_test1qrxprsrzy2pnsys7tgtyzhgm6xdufu77vc23xx896s7ardmgz5vplwyruw840wfzygekpfkewwlj4n2mvg2vcmddrjcq9srrd2",
+    "qualifications": "Governance & Decision-Making\n\nExperience evaluating complex proposals and making informed, structured decisions.\n\nStrong analytical skills for assessing benefits, risks, and long-term implications.\n\nFamiliarity with decentralized governance principles and blockchain-based voting systems.\n\nBlockchain & Cardano Ecosystem Knowledge\n\nUnderstanding of Cardano’s governance framework, CIP processes, and technical roadmap.\n\nActive participation in community discussions, workshops, and proposal reviews.\n\nWorking knowledge of staking, delegation, and on-chain governance mechanics.\n\nCommunication & Transparency\n\nAbility to communicate clearly, summarize proposals, and explain voting decisions in accessible language.\n\nExperience with community engagement, feedback gathering, and open reporting.\n\nCommitment to transparency and consistent public updates for delegators.\n\nProfessional Skills\n\nBackground in roles requiring critical thinking, accountability, and independent judgment.\n\nExperience working",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "X Accunt",
+        "uri": "https://x.com/jonas_makeke"
+      },
+      {
+        "@type": "Identity",
+        "label": "X Accunt",
+        "uri": "https://pbs.twimg.com/profile_images/1917520463040745472/VsxnNvZ__400x400.jpg"
+      }
+    ]
+  }
+}
